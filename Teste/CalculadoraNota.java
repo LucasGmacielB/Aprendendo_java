@@ -2,7 +2,7 @@ package Teste;
 
 import java.util.Scanner;
 
-public class Aprender {
+public class CalculadoraNota {
     public static void main(String[] args) {
         char[] gabarito = {'a','b','c','d','e','a','b','c','d','e'};
         char[] resposta = new char[10];
