@@ -1,7 +1,7 @@
 package BancoJava;
 public class ContaBanco {
     public int numeroConta = 0;
-    protected String tipo = "";
+    private String tipo = "";
     private String dono = "";
     private double saldo = 0.0;
     private boolean status = false;
@@ -18,7 +18,7 @@ public class ContaBanco {
         }
         return this.saldo;
     }
-    //se o parâmetro retirar for maior que o saldo não acontecerá nada. Se o parâmetro retirar for mair que zero e menor ou igual ao saldo, ele poderá ser subtraído do saldo
+    //se o parâmetro retirar for maior que o saldo não acontecerá nada. Se o parâmetro retirar for maior que zero e menor ou igual ao saldo, ele poderá ser subtraído do saldo
     public double retirar(double retirar){
         if (retirar > this.saldo) {
             this.saldo = getSaldo();
@@ -47,7 +47,7 @@ public class ContaBanco {
             this.status = false;
         }
     }
-//ao ser chamado mastra algumas informações para o usuário
+//ao ser chamado mostra algumas informações para o usuário
     public void infoConta(){
         System.out.println("-------------------------------------------");
         System.out.println("Informações da conta:");

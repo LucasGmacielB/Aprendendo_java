@@ -4,7 +4,7 @@ public class Principal {
         int numconta = 0;
         ContaBanco lucas = new ContaBanco(++ numconta, "Lucas");
         
-        lucas.abrirConta("Cd");
+        lucas.abrirConta("CC");
         lucas.fecharConta();
         lucas.infoConta();
     }
